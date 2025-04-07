@@ -1,10 +1,18 @@
-import { Badge } from "@/components/ui/badge"
-import { Card } from "@/components/ui/card"
-import { Building, Code, FileText, Github, Mail, Phone, User } from "lucide-react"
-import { CompanyCard } from "@/components/company-card"
-import { ProjectCard } from "@/components/project-card"
-import { PersonalProjectCard } from "@/components/personal-project-card"
-import { BlogCard } from "@/components/blog-card"
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import {
+  Building,
+  Code,
+  FileText,
+  Github,
+  Mail,
+  Phone,
+  User,
+} from "lucide-react";
+import { CompanyCard } from "@/components/company-card";
+import { ProjectCard } from "@/components/project-card";
+import { PersonalProjectCard } from "@/components/personal-project-card";
+import { BlogCard } from "@/components/blog-card";
 
 export default function Resume() {
   return (
@@ -16,8 +24,8 @@ export default function Resume() {
       >
         {/* Header Section */}
         <header className="flex justify-between items-start">
-          <div className="flex flex-col justify-between h-[88px]">
-            <h1 className="text-3xl font-bold tracking-tight" itemProp="name">
+          <div className="flex flex-col justify-between h-[104px]">
+            <h1 className="text-4xl tracking-tight" itemProp="name">
               李名河
             </h1>
             <div className="text-sm text-muted-foreground">
@@ -83,19 +91,23 @@ export default function Resume() {
                 projects={[
                   {
                     name: "可编辑表格升级",
-                    description: "基于Canvas+DOM的高性能表格解决方案，首屏渲染时间减少88%，数千条数据下稳定运行",
+                    description:
+                      "基于Canvas+DOM的高性能表格解决方案，首屏渲染时间减少88%，数千条数据下稳定运行",
                   },
                   {
                     name: "指标管理重构",
-                    description: "优化指标系统的用户体验和核心业务度量，一次创建成功率提升30%，指标创建时间缩短60%+",
+                    description:
+                      "优化指标系统的用户体验和核心业务度量，一次创建成功率提升30%，指标创建时间缩短60%+",
                   },
                   {
                     name: "客户数据平台业务迭代",
-                    description: "负责标签与指标系统的需求开发，提升系统的易用度和功能性",
+                    description:
+                      "负责标签与指标系统的需求开发，提升系统的易用度和功能性",
                   },
                   {
                     name: "团队技术建设与分享",
-                    description: "主动参与部门组件库建设，贡献通用组件feedback、Carousel，业务组件Search",
+                    description:
+                      "主动参与部门组件库建设，贡献通用组件feedback、Carousel，业务组件Search",
                   },
                 ]}
                 className="h-full"
@@ -117,11 +129,13 @@ export default function Resume() {
                   projects={[
                     {
                       name: "商家与运营结算系统开发",
-                      description: "基于微前端架构的结算系统重构，NPS从7.13提升至8.0",
+                      description:
+                        "基于微前端架构的结算系统重构，NPS从7.13提升至8.0",
                     },
                     {
                       name: "营销无代码平台建设",
-                      description: "拖拽式活动页面创建工具，活动创建时间从5pd+降为2pd-",
+                      description:
+                        "拖拽式活动页面创建工具，活动创建时间从5pd+降为2pd-",
                     },
                   ]}
                 />
@@ -129,28 +143,43 @@ export default function Resume() {
 
               <Card className="p-4">
                 <h3 className="text-base font-medium mb-2">个人项目</h3>
-                <div className="flex flex-wrap gap-1.5 mb-2">
-                  <Badge variant="secondary" className="text-xs font-normal rounded">
-                    Next.js
+                <div className="flex flex-wrap gap-1.5 mb-3">
+                  <Badge
+                    variant="secondary"
+                    className="text-xs font-normal rounded"
+                  >
+                    Next
                   </Badge>
-                  <Badge variant="secondary" className="text-xs font-normal rounded">
-                    langchain
+                  <Badge
+                    variant="secondary"
+                    className="text-xs font-normal rounded"
+                  >
+                    Langchain
                   </Badge>
-                  <Badge variant="secondary" className="text-xs font-normal rounded">
-                    agent
+                  <Badge
+                    variant="secondary"
+                    className="text-xs font-normal rounded"
+                  >
+                    React
                   </Badge>
-                  <Badge variant="secondary" className="text-xs font-normal rounded">
-                    Vue3
+                  <Badge
+                    variant="secondary"
+                    className="text-xs font-normal rounded"
+                  >
+                    Vue
                   </Badge>
-                  <Badge variant="secondary" className="text-xs font-normal rounded">
-                    TypeScript
+                  <Badge
+                    variant="secondary"
+                    className="text-xs font-normal rounded"
+                  >
+                    JS
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 text-sm">
-                  <span className="font-medium">ChatTask</span>
-                  <span className="font-medium">技术博客</span>
-                  <span className="font-medium">toc-creator</span>
-                  <span className="font-medium">vue3-img-viewer</span>
+                  <span className="font-normal">ChatTask /</span>
+                  <span className="font-normal">toc-creator /</span>
+                  <span className="font-normal">img-viewer /</span>
+                  <span className="font-normal">技术博客 </span>
                 </div>
               </Card>
             </div>
@@ -257,10 +286,16 @@ export default function Resume() {
               url="https://juejin.cn/user/4402870941397416"
               techStack={["JavaScript", "Vue", "React", "npm"]}
               posts={[
-                { title: "大函数组件时代之Hooks海贼团", url: "https://juejin.cn/post/7401703734856089600" },
+                {
+                  title: "大函数组件时代之Hooks海贼团",
+                  url: "https://juejin.cn/post/7401703734856089600",
+                },
                 { title: "手写节流与防抖？生动展示装饰器原理与实践" },
                 { title: "和我一起一步步写个页面通用的toc目录组件" },
-                { title: "还在用typeof、instanceof？是时候给你的类型检查升个级了" },
+                {
+                  title:
+                    "还在用typeof、instanceof？是时候给你的类型检查升个级了",
+                },
               ]}
             />
 
@@ -283,6 +318,5 @@ export default function Resume() {
         </section>
       </article>
     </div>
-  )
+  );
 }
-
