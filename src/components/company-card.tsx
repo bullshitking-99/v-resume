@@ -1,17 +1,17 @@
-import { Badge } from "@/components/ui/badge"
-import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 
 interface CompanyCardProps {
-  company: string
-  department: string
-  position: string
-  period: string
-  techStack: string[]
+  company: string;
+  department?: string;
+  position?: string;
+  period: string;
+  techStack: string[];
   projects: Array<{
-    name: string
-    description?: string
-  }>
-  className?: string
+    name: string;
+    description?: string;
+  }>;
+  className?: string;
 }
 
 export function CompanyCard({
@@ -29,7 +29,8 @@ export function CompanyCard({
         <div>
           <h3 className="text-base font-medium">{company}</h3>
           <p className="text-sm text-muted-foreground">
-            {department} · {position}
+            {department}
+            {position ? " · " + position : ""}
           </p>
         </div>
         <time className="text-sm text-muted-foreground">{period}</time>
@@ -38,7 +39,11 @@ export function CompanyCard({
       <div className="mb-3">
         <div className="flex flex-wrap gap-1.5 mb-1">
           {techStack.map((tech, index) => (
-            <Badge key={index} variant="secondary" className="text-xs font-normal rounded">
+            <Badge
+              key={index}
+              variant="secondary"
+              className="text-xs font-normal rounded"
+            >
               {tech}
             </Badge>
           ))}
@@ -49,13 +54,16 @@ export function CompanyCard({
         <ul className="text-sm space-y-3">
           {projects.map((project, index) => (
             <li key={index} className="flex flex-col">
-              <span className="font-medium">{project.name}</span>
-              {project.description && <span className="text-muted-foreground text-sm">{project.description}</span>}
+              <span>{project.name}</span>
+              {project.description && (
+                <span className="text-muted-foreground text-sm">
+                  {project.description}
+                </span>
+              )}
             </li>
           ))}
         </ul>
       </div>
     </Card>
-  )
+  );
 }
-
