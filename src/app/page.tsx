@@ -14,7 +14,7 @@ import { BlogCard } from "@/components/blog-card";
 
 export default function Resume() {
   return (
-    <div className="min-h-screen bg-slate-50 py-8 px-4 flex justify-center">
+    <div className="min-h-screen bg-slate-50 py-2  flex justify-center">
       <article
         className="w-[210mm] min-w-[210mm] bg-white p-8 shadow-sm rounded-lg space-y-6"
         itemScope
