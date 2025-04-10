@@ -141,7 +141,7 @@ export default function Resume() {
               <CompanyCard
                 company="个人项目"
                 period="2023-2025"
-                techStack={["Next", "Langchain", "Agent", "React", "Vue"]}
+                techStack={["Next", "LangGraph", "ReAct", "React", "Vue"]}
                 projects={[
                   {
                     name: "ChatTask / toc-creator / img-viewer / 技术博客",
@@ -225,7 +225,7 @@ export default function Resume() {
                 title="ChatTask"
                 period="2025"
                 // url="https://ai-todo-gamma.vercel.app/"
-                techStack={["Next", "langchain", "agent", "supabase"]}
+                techStack={["Next", "LangGraph", "ReAct", "RAG"]}
                 posts={[
                   {
                     title: "通过对话进行任务的CRUD",
@@ -243,8 +243,8 @@ export default function Resume() {
               <BlogCard
                 title="技术博客"
                 period="2022-2024"
-                url="https://juejin.cn/user/4402870941397416"
-                techStack={["JavaScript", "Vue", "React", "npm"]}
+                // url="https://juejin.cn/user/4402870941397416"
+                techStack={["JavaScript", "Vue", "React"]}
                 className="h-[224px]"
                 posts={[
                   {
@@ -283,16 +283,16 @@ export default function Resume() {
               <PersonalProjectCard
                 title="toc-creator"
                 period="2023"
-                url="https://www.npmjs.com/package/toc-creator"
-                techStack={["Vue3", "TypeScript"]}
+                // url="https://www.npmjs.com/package/toc-creator"
+                techStack={["Vue3", "TypeScript", "npm"]}
                 description="自动生成的可拖拽目录，支持自定义样式和交互行为"
               />
 
               <PersonalProjectCard
                 title="vue3-img-viewer"
                 period="2023"
-                url="https://www.npmjs.com/package/vue3-img-viewer"
-                techStack={["Vue3", "TypeScript"]}
+                // url="https://www.npmjs.com/package/vue3-img-viewer"
+                techStack={["Vue3", "TypeScript", "npm"]}
                 description="轻量、平滑的图片预览组件，支持缩放、旋转等功能"
               />
             </div>
